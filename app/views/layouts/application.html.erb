@@ -4,12 +4,44 @@
     <title>TestBootstrapwithrubyonrails</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <main class="d-flex h-100">
+      <div class="left-side-bar d-flex flex-column w-25 h-100">
+        <nav class="navbar w-100 d-flex flex-column justify-content-center p-2 pb-5 bg-danger">
+          <a class="navbar-brand w-100 bg-white" href="/">
+            <div class="navbar-brand__logo-picture">Animal Land</div>
+          </a>
+          <!--20210310list-groupもbootstrap-->
+          <ul class="list-group mt-5 w-100 text-center pr-2 pl-0">
+            <a href="about">
+              <li class="list-group-item h2">About</li>
+            </a>
+            <a href="#">
+              <li class="list-group-item h2">Summary</li>
+            </a>
+            <a href="#">
+              <li class="list-group-item h2">Animals</li>
+            </a>
+            <a href="#">
+              <li class="list-group-item h2">Access</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <div class="contents d-flex flex-column">
+        <%= yield %>
+      </div>
+    
+    </main>
+    <footer class="bg-dark text-white text-center mt-auto pt-5">
+      <a href="/" class="text-white">
+        <p>Test-Bootstrap by RubyOnRails</p>
+      </a>
+    </footer>
   </body>
 </html>
