@@ -35,12 +35,15 @@ body{
 
 .navbar-brand {
   &__logo-picture{
-    height: 200px;
+    height: 100px;
+  //   background-image: url("logo.png");
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
   }
 }
 
 .left-side-bar{
-  background-color: rgb(255, 210, 62);
+  background-color: rgb(238, 166, 11);
   
   > navbar{
     background-color: rgb(230, 165, 25);

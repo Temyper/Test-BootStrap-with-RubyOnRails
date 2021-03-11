@@ -11,10 +11,11 @@
 
   <body>
     <main class="d-flex h-100">
-      <div class="left-side-bar d-flex flex-column w-25 h-100">
-        <nav class="navbar w-100 d-flex flex-column justify-content-center p-2 pb-5 bg-danger">
-          <a class="navbar-brand w-100 bg-white" href="/">
-            <div class="navbar-brand__logo-picture">Animal Land</div>
+      <div class="left-side-bar d-flex flex-column w-25 h-100 p-2">
+        <nav class="navbar w-100 d-flex flex-column justify-content-center p-2 pb-5">
+          <a class="navbar-brand w-100" href="/">
+            <!--20210311assets/images/logo.pngはダメというルール-->
+            <img src="assets/logo.png" class="navbar-brand__logo-picture"></img>
           </a>
           <!--20210310list-groupもbootstrap-->
           <ul class="list-group mt-5 w-100 text-center pr-2 pl-0">
@@ -33,14 +34,11 @@
           </ul>
         </nav>
       </div>
-      <div class="contents d-flex flex-column">
-        <%= yield %>
-      </div>
-    
+      <%= yield %>
     </main>
     <footer class="bg-dark text-white text-center mt-auto pt-5">
       <a href="/" class="text-white">
-        <p>Test-Bootstrap by RubyOnRails</p>
+        <p>20210311Test-Bootstrap by RubyOnRails</p>
       </a>
     </footer>
   </body>
