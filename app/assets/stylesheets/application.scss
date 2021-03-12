@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  min-width: 210mm;
+  height: 297mm;
+  background-color: rgb(234, 238, 20);
+}
+
+.navbar-brand {
+  &__logo-picture{
+    height: 100px;
+  //   background-image: url("logo.png");
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  }
+}
+
+.left-side-bar{
+  background-color: rgb(238, 166, 11);
+  
+  // > navbar{
+  //   background-color: rgb(230, 165, 25);
+  // }
+}
+
+footer{
+  height: 10%;
+}
