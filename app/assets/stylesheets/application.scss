@@ -25,6 +25,7 @@
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 body{
@@ -44,8 +45,14 @@ body{
 
 }
 
-.head{
-  
+.right-area{
+  &__body__areas__area{
+    height: 20%;
+  }
+}
+
+.right-area__body__areas__area{
+  width: 45%;
 }
 
 footer{
