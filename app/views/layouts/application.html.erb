@@ -9,7 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body> 
+  <body>
     <main class="d-flex h-100">
       <div class="left-side-bar d-flex flex-column w-25 h-100 p-2">
         <nav class="navbar w-100 d-flex flex-column justify-content-center p-2 pb-5">
@@ -21,9 +21,9 @@
             <%= link_to homes_about_path do %>
               <li class="list-group-item h2">About</li>
             <% end %>
-            <a href="#">
+            <%= link_to areas_path do %>
               <li class="list-group-item h2">Areas</li>
-            </a>
+            <% end %>
             <a href="#">
               <li class="list-group-item h2">Animals</li>
             </a>

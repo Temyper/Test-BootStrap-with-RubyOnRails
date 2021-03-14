@@ -5,3 +5,28 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Area.create!(
+  [
+    {
+      name: "Cats",
+      detail: "This is a cats area! We have various cats!"
+    },
+    { 
+      name: "Rats",
+      detail: "This is a rats area! Minimum rats heal you! Haha!"
+    },
+    { 
+      name: "Birds",
+      detail: "This is a birds area! Especially, you may like chicks!"
+    },
+    { 
+      name: "Monkeys",
+      detail: "This is a monkeys area! Now, there will be an event monkeys do acrobatics!"
+    },
+    { 
+      name: "Fishes",
+      detail: "This is a fishes area! they are fresh everyday!"
+    }
+  ]
+)
