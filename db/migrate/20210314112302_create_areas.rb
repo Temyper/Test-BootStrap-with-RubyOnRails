@@ -1,5 +1,5 @@
 class CreateAreas < ActiveRecord::Migration[5.2]
-  # 20210314画像のパスは見送り
+  # 画像のパスは見送り
   def change
     create_table :areas do |t|
       t.string :name, null: false, default: ""
